@@ -6,11 +6,9 @@
    padding-left:$default-padding;
    padding-right:$default-padding;
     display:flex;
+    justify-content: space-between;
     &__elem{
-       flex-grow: 1;
-       &:not(:last-child){
-          margin-right:2rem;
-       }
+       flex-basis: 45%;
     }
 }
 

@@ -14,7 +14,7 @@ export default function Article(props){
        if(type === 'primary'){
            header = <h1 className={`header--primary`}>{h}</h1>
        }else if(type === 'secondary'){
-        header = <h2 className={`header--secondary`}>{h}</h2>
+        header = <h2 className={`header--secondary u-margin-bottom-medium`}>{h}</h2>
        }else if(type === 'tertiary'){
         header = <h2 className={`header--tertiary`}>{h}</h2>
        }

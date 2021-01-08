@@ -15,8 +15,9 @@ export default class ApplyForAdmission extends Component{
 
     render(){
         const {search} = this.state;
+        const {classes, aos} = this.props;
         
-        return (<form action="#" className="apply-form">
+        return (<form action="#"  className={`apply-form ${classes || null}`} data-aos={aos}>
           <h4 className="apply-form__h u-margin-bottom-small">Apply for admission</h4>
           <p className="apply-form__p u-margin-bottom-tiny">Make it more simple</p>
           <div className="apply-form__input-box">

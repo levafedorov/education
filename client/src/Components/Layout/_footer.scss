@@ -1,0 +1,38 @@
+.footer{
+    padding: 5.5rem 0;
+    font-size: 1.7rem;
+    color: rgba($color-grey-lightest, .6);
+    &__centrer{
+        max-width:118.5rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-left:$default-padding;
+        padding-right:$default-padding;
+    }
+    &__left{
+      flex-basis: 30rem;
+    }
+
+    &__right{
+        flex-basis: 60rem;
+      }
+    &__copyright{
+        span:not(:first-child){
+         display: inline-block;
+         margin-left: 2rem;
+        }
+    }  
+
+    &__add-info{
+        display: flex;
+        width: 100%;
+        justify-content:space-between;
+    }
+
+    &__link{
+        color: inherit;
+        font-size: inherit;
+        padding: .5rem;
+    }
+}

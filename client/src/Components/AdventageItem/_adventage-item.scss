@@ -1,0 +1,30 @@
+.adventage-item{
+    @include raleway;
+    padding: $default-padding;
+    width: 100%;
+    text-align: center;
+    &:hover &__icon{
+        animation-name: bounce;
+        animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+        animation-duration: 2s;
+        animation-iteration-count: forwards;
+        transform-origin: bottom;
+    }
+    &__icon{
+        display: inline-block;
+        width: 14rem;
+        height: 14rem;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        &--0{
+           background-color:$color-blue-light;
+        }
+        &--1{
+            background-color:$color-purple;
+         }
+        &--2{
+            background-color:$color-orange;
+         }
+    }
+}
