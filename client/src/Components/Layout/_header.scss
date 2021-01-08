@@ -1,0 +1,67 @@
+.main-header{
+   background-color: $color-purple;
+   // background-image: url('../../assets/images/backgrounds/shape-1.png');
+   // background-repeat: no-repeat;
+   // background-position:  40rem 20rem;
+   // background-size:30rem;
+   padding:37.7rem 0 27.1rem 0;
+   overflow: hidden;
+   
+   .positioner{
+     z-index: 2;
+     @include clearfix;
+     position: relative;
+   }
+
+   .article{
+      width: 49%;
+      float: left;
+   }
+
+   &__cartoon{
+      width: 49%;
+      height: 40rem;
+      float: left;
+      background-image: url('../../assets/images/cartoons/cartoon-1.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position:center;
+      transform: translate(5rem, -5rem) scale(1.2);
+   }
+
+   &__decoration{
+      width: 30%;
+      height: 30rem;
+      position:absolute;
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      &--1{
+         top: -10vw;
+         background-image: url(../../assets/images/backgrounds/shape-1.png);
+         animation: glimps 8.5s backwards infinite;
+      }
+
+      &--2{
+         height: 60rem;
+         width: 20%;
+         top: -50rem;
+         right: -18vw;
+         background-image: url(../../assets/images/backgrounds/shape-2.png);
+         animation: glimps 8.5s .5s backwards infinite;
+      }
+
+      &--3{
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+         background-image: url(../../assets/images/backgrounds/shape-3.png);
+         animation: glimps 5.5s .3s backwards infinite;
+      }
+
+   }
+
+   
+}
+
+

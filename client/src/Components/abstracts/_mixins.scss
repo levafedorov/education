@@ -1,0 +1,21 @@
+
+@mixin open-sans {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+@mixin raleway {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+@mixin roboto {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

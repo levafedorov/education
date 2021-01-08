@@ -1,0 +1,46 @@
+.navigation{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;   
+    z-index: 10000;
+    padding-top: 5rem;
+    &__centerer{
+      max-width: 118.5rem;
+      padding-left:$default-padding;
+      padding-right:$default-padding;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      & > *{
+        align-items: center;
+    }
+    }
+ &__right{
+     display: flex;
+     flex-basis:67rem;
+     justify-content: space-between;
+ }
+
+  &__list{
+      display: flex;
+      flex-basis: 45rem;
+      justify-content: space-between;
+  }
+
+  
+  &__link{
+        &, &:visited, &:link{
+        color: $color-white;
+        display: inline-block;
+        padding: .8rem;
+        border-radius: 50rem;
+        transition: all .3s;
+        background-color: $color-purple;
+        &:hover, &:active{
+            transform: translateY(-1rem) scale(1.3);
+            box-shadow: 1.5rem -.5rem .3rem rgba($color: $color-black , $alpha: .5)
+        }
+      }
+  }
+}

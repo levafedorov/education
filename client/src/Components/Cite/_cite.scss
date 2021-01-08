@@ -1,0 +1,12 @@
+.cite{
+text-align: center;
+
+&__text{font-size: 1.8rem;
+    font-style: italic;
+    }
+
+&__author{
+         color: $color-orange;
+         font-weight: 600;
+    }
+}

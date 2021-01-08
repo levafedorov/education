@@ -1,0 +1,46 @@
+.btn{
+    padding: 1.5rem 3rem;
+    min-width:12.3rem;
+    min-height:5.2rem;
+    border-radius:3rem;
+    border: none;
+    @include raleway;
+    font-size: 1.8rem;
+    font-weight: 600;
+    box-shadow: .3rem 0 .3rem rgba($color-black, .9);
+    transition: box-shadow .2s;
+    backface-visibility: hidden;
+    cursor: pointer;
+    &:focus{
+        outline-color: $color-blue-light;
+    }
+    &--red{
+        color: white;
+        background-color: $color-red;
+        &:hover {    
+            box-shadow: 
+            .3rem 0 .3rem rgba($color-black, .2),
+            inset 0 0 .5rem rgba($color-white, .5);
+        }
+        &:active{
+            background-color: lighten($color-red, 5);
+        }   
+    }
+
+    &--animated{
+        animation: fromright .8s;
+    }
+}
+
+@keyframes fromright{
+    0%{
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

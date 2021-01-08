@@ -1,0 +1,40 @@
+body {
+    @include open-sans;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+
+  
+  .header{
+    @include raleway;
+
+    &--primary{
+      font-size: 6.5rem;
+      font-weight: 600;
+      color:$color-white;
+    }
+
+    &--secondary{
+      font-size: 3.5rem;
+      color:$color-grey-light;
+    }
+    
+    &--tertiary{
+      font-size: 2.5rem;
+      color:$color-grey-light;
+    }
+
+  }
+  
+
+  
+ .paragraph{
+  @include open-sans;
+  font-size: 1.7rem;
+    &--primary{
+    color:$color-white; }
+
+    &--secondary{
+      color:$color-white; }
+  }
