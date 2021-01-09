@@ -8,7 +8,14 @@
     .apply-form{
         position: relative;
         top: -10rem;
+        @include respond(tab-port-mini){
+            top: 0;
+         }
     }
+
+    @include respond(tab-port-mini){
+        padding-bottom: 0rem;
+     }
 }
 
 
@@ -17,6 +24,9 @@
 
 .section-info-first, .section-info-second{
     padding: 15rem 0 18.5rem 0;
+    @include respond(tab-port-mini){
+        padding: 7rem 0 10.5rem 0;
+     }
     position: relative;
     &__background{
         background-repeat: no-repeat;
@@ -62,4 +72,7 @@
 
 .section-advetages{
     padding: 12rem 0;
+    @include respond(tab-port-mini){
+        padding: 5rem 0;
+     }
 }

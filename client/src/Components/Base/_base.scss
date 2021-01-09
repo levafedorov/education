@@ -1,9 +1,14 @@
 
 html{
-    font-size: 62.5% //1rem;
+    font-size: 62.5%; //1rem
+    @include respond(tab-port){
+        font-size: 57%;
+    }
 }
 
+
 body{
+   
    box-sizing: border-box;
 }
 
@@ -32,3 +37,5 @@ a{
     text-decoration: none;
     color: black;
 }
+
+

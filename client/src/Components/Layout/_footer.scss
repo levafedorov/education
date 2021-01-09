@@ -2,6 +2,15 @@
     padding: 5.5rem 0;
     font-size: 1.7rem;
     color: rgba($color-grey-lightest, .6);
+
+    @include respond(tab-port-mini){
+        padding: 3rem 0;
+     }
+
+     @include respond(phone){
+        font-size: 1.2rem;
+     }
+
     &__centrer{
         max-width:118.5rem;
         display: flex;
@@ -9,13 +18,24 @@
         margin: 0 auto;
         padding-left:$default-padding;
         padding-right:$default-padding;
+        @include respond(tab-port){
+            flex-direction: column;
+            justify-content: flex-start;
+         }
+        
     }
     &__left{
       flex-basis: 30rem;
+      @include respond(tab-port){
+        flex-basis: 0rem;
+     }
     }
 
     &__right{
         flex-basis: 60rem;
+        @include respond(tab-port){
+            flex-basis: 0rem;
+         }
       }
     &__copyright{
         span:not(:first-child){
@@ -28,6 +48,10 @@
         display: flex;
         width: 100%;
         justify-content:space-between;
+        @include respond(phone){
+            flex-wrap: wrap;
+            justify-content:flex-start;
+         }
     }
 
     &__link{

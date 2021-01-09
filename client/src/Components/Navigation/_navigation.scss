@@ -44,3 +44,97 @@
       }
   }
 }
+
+
+.navigation-mini{
+    width: 100%;
+    padding: 2rem;
+    position: absolute;
+    z-index: 50;
+    top:0rem;
+    left:0rem;
+    display: flex;
+    justify-content: space-between;
+    &__left{}
+    &__right{}
+    &__nav{}
+    &__checkbox{display: none;}
+    &__label{
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    &__bar{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        &, &::before, &::after{
+            width: 5rem;
+            height: .4rem;
+            background-color: $color-white;
+            backface-visibility: hidden;
+            transition: all .3s;
+        }
+        &::before, &::after{
+            content: '';
+            display: block;
+            position: absolute;
+        }
+        &::before{
+            top: -1rem;
+        }
+        &::after{
+            bottom: -1rem;
+        }
+    }
+
+    &__menu{
+        width: 20rem;
+        text-align: center;
+        position: absolute;
+        bottom:-12rem;
+        transition: all .2s;
+        background-color: rgba($color-black, .9);
+        transform: translateX(-120%);
+    }
+
+    &__checkbox:checked + &__label &__bar{
+        background-color: transparent;
+        &::before{
+            top: -.2rem;
+            transform: rotate(45deg);
+        }
+        &::after{
+            bottom: .2rem;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__checkbox:checked ~ &__menu{
+        transform: translateX(0);
+    }
+
+    &__item{
+        border-bottom: 2px solid $color-purple;
+    }
+    &__link{
+        transition: all .3s;
+        &, &:link, &:visited{
+            font-size: 2rem;
+            color: $color-white;
+            display: inline-block;
+            backface-visibility: hidden;
+        }
+        &:hover{
+            transform: translateX(20%) scale(1.3);
+        }
+    }
+    backface-visibility: hidden;
+}
+

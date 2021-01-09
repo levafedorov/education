@@ -12,7 +12,7 @@ return <section className="section section-advetages">
         <Flex>
         {adventages.map((item, i) => 
         <AdventageItem h={'Global Student'} p={`Lorem ipsum dolor sit amet consectetur elit, 
-         urna consequat felis vehicula class ultricies ultricies ultricies class`} bg={'/icons/icon-global-student.png'} num={i} ey={`key-${i}`}/>)}
+         urna consequat felis vehicula class ultricies ultricies ultricies class`} bg={'/icons/icon-global-student.png'} num={i} key={`key-${i}`}/>)}
          </Flex>
       </section>
 }

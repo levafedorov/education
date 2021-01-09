@@ -11,6 +11,10 @@
     transition: box-shadow .2s;
     backface-visibility: hidden;
     cursor: pointer;
+    @include respond(tab-port){
+        padding: 1rem 2rem;
+        min-width: 1rem;
+    }
     &:focus{
         outline-color: $color-blue-light;
     }

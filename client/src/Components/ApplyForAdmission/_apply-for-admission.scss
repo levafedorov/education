@@ -28,7 +28,7 @@
             }
 
     &__btn{
-           flex-grow: 1;
+           flex-shrink: 0;
            border-top-right-radius: 3rem;
            border-bottom-right-radius: 3rem; 
            width: 6.5rem;
