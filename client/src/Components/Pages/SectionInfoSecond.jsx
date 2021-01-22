@@ -1,7 +1,7 @@
 import Flex from '../Layout/Flex';
 import Cartoon from '../Cartoon/Cartoon';
 import Article from '../Article/Article';
-
+import CartoonImage from '../../assets/images/cartoons/cartoon-3.png';
 
 export default function SectionInfoSecond(props){
 
@@ -17,7 +17,7 @@ return <section className="section section-info-second">
             b={'Get started' }
             type={'secondary'} 
             />
-          <Cartoon background={'/cartoons/cartoon-3.png'}/>
+          <Cartoon background={CartoonImage}/>
           </Flex>
       </section>
 }

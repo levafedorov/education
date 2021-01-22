@@ -1,7 +1,7 @@
 import Flex from '../Layout/Flex';
 import Cartoon from '../Cartoon/Cartoon';
 import Article from '../Article/Article';
-
+import CartoonImage from '../../assets/images/cartoons/cartoon-2.png';
 
 export default function SectionInfoFirst(props){
 
@@ -9,7 +9,7 @@ export default function SectionInfoFirst(props){
 return <section className="section section-info-first">
           <div className="section-info-first__background"></div>
           <Flex>
-          <Cartoon background={'/cartoons/cartoon-2.png'}/>
+          <Cartoon background={CartoonImage}/>
           <Article p={`Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis
            vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante
             pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi 
