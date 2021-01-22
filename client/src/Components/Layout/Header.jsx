@@ -11,9 +11,7 @@ export default function Header(props){
 
     
     function resizer(ev){
-        const width = window.innerWidth;
-        console.log(window.innerWidth > 500, minified);
-        
+        const width = window.innerWidth;    
         if(width < 500 && !minified){
             setMinified(true);
         }else if(width > 500 && minified){          
